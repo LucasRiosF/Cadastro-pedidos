@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.index.css">
+    <script src="assets/js/script.index.js"></script>
+    <title>Cadastro de Pedidos</title>
+</head>
+<body>
+    <h1>Cadastro de Pedidos</h1>
+<div>
+    <input type="text" placeholder="Cliente" id="cliente">
+    <input type="number" placeholder="Mesa" id="mesa">
+    <input type="text" placeholder="Descrição" id="descricao">
+</div>
+    <button id="botaoCadastrar" onclick="criarPedido()">Cadastrar</button>
+    <button id="botaoEditar" class="hidden" onclick="editarPedido()">Editar Pedido</button>
+    
+    <div id="lista" class="hid">
+        <h2>Lista de Pedidos</h2>
+        <div id="listarPedidos"></div>
+    </div>
+</body>
+</html>
